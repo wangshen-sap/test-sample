@@ -1,0 +1,44 @@
+{
+	"name": "test-sample",
+	"description": "test",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"publisher": "test",
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wangshen-sap/test-sample.git"
+	  },
+	"contributes": {
+		"commands": [
+			{
+				"command": "webview.show",
+				"title": "Show Test Sample"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"setup": "npm i",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -w -p ./"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "^12.12.0",
+		"@typescript-eslint/eslint-plugin": "^3.0.2",
+		"@typescript-eslint/parser": "^3.0.2",
+		"eslint": "^7.1.0",
+		"typescript": "^3.9.4",
+		"@types/vscode": "^1.46.0"
+	}
+}
